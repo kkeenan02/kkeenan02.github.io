@@ -31,13 +31,13 @@
   
 
   
-  <link href="/favicon.png" rel="icon">
+  <link href="https://kkeenan02.github.io/favicon.png" rel="icon">
 
   
   
   
 
-  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Data-Driver" />
+  <link href="https://kkeenan02.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Data-Driver" />
 
   <meta name="description" content="">
   <meta name="keywords" content="">
@@ -59,7 +59,7 @@
 
 <header role="banner"><hgroup>
   
-  <h1><a href="/">Data-Driver</a></h1>
+  <h1><a href="https://kkeenan02.github.io/">Data-Driver</a></h1>
     <h2></h2>
 </hgroup></header>
 
@@ -101,31 +101,26 @@
         
 
 <header>
-    <p class="meta">Jul 23, 2015
+    <p class="meta">May 12, 2018
          - 1 minute read 
         
 
         
         
         
-            - <a class="label" href="/categories/r/">R </a>
+            - <a class="label" href="https://kkeenan02.github.io/categories/r/">R </a><a class="label" href="https://kkeenan02.github.io/categories/aws/">AWS </a><a class="label" href="https://kkeenan02.github.io/categories/database/">Database </a><a class="label" href="https://kkeenan02.github.io/categories/redshift/">Redshift </a>
         
     </p>
     <h1 class="entry-title">
-        <a href="/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a>
+        <a href="https://kkeenan02.github.io/post/2018-05-12_high_throughput_redshift_lookup/">High Throughput lookups in AWS Redshift</a>
     </h1>
 </header>
 
 
         
-          <p>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</p>
+          <p>Recently, I had a seemingly simple task, where I effectively wanted to lookup a large list of value pairs in a large redshift table containing ~5 billion rows. I immediatly recalled that the IN clause would probably be useful here. Below is a mock example of how this approach might look:
+select val_1, val_2, tablefield_1, tablefield_2, ..., tablefield_n from target_table where (val1, val2) IN ((value_1, value_1), (value_, value_2), ... (value_n, value_n)) </p>
 
-          
-              <footer>
-                  <a href="/post/2015-07-23-r-rmarkdown/" rel="full-article">Read On &rarr;</a>
-              </footer>
           
 
         
@@ -192,7 +187,7 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
 </div>
 
 <footer role="contentinfo">
-  <p>Copyright &copy; 2018  - <a href="/license/">License</a> -
+  <p>Copyright &copy; 2018  - <a href="https://kkeenan02.github.io/license/">License</a> -
   <span class="credit">Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> and <a target="_blank" href="https://github.com/parsiya/hugo-octopress/">Hugo-Octopress</a> theme.
 </p>
 
