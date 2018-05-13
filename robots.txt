@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://kkeenan02.github.io/sitemap.xml
